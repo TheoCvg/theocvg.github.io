@@ -17,6 +17,7 @@ jobs:
               run: |
                 npm ci
                 npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css
+                echo "File created locally."
 
             - name: Commit output
               run: |
@@ -24,6 +25,8 @@ jobs:
                 git config --global user.email 'TheoCvg@users.noreply.github.com'
                 git commit -am "Automated output"
                 git push
-            - run: echo "Finished building."
+                echo "File pushed on Github."
+
+            - run: echo "Finished."
 
             
