@@ -8,17 +8,56 @@
     <title>Portfolio Théo Cavagne</title>
 </head>
 <body>
-    <nav class=" bg-white">
-        <div class="flex justify-end w-5/6">
-            <div class="flex justify-around text-xl w-4/6">
-                <a href="#" class="nav-item nav-active">Présentation</a>
-                <a href="#" class="nav-item">Compétences</a>
-                <a href="#" class="nav-item">Parcours</a>
+    <div class="flex flex-col h-dvh">
+        <nav class="bg-white shadow-md">
+            <div class="flex justify-end w-5/6">
+                <div class="flex justify-around text-xl w-4/6">
+                    <a href="#" class="nav-item nav-active">Acceuil</a>
+                    <a href="#" class="nav-item">Projets</a>
+                    <a href="#" class="nav-item">Formation</a>
+                    <a href="#" class="nav-item">Expérience</a>
+                    <a href="#" class="nav-item">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="flex-grow grid grid-cols-[5%_70%_20%_5%] mt-24">
+            <div class="col-start-2 flex flex-col">
+                <div class="grid grid-cols-[5%_90%_5%]">
+                    <p class="text-9xl col-start-2">Théo CAVAGNE</p>
+                    <p class="text-5xl col-start-2 col-span-2 text-right mr-16">Apprenti développeur logiciel</p>
+                </div>
+                <div class="flex-grow m-8">
+                    <p class="ml-16 my-4">Description...</p>
+                </div>
+                <div class="flex justify-center">
+                    <a href="CV-CAVAGNE-Theo.pdf" download="CV_Theo_Cavagne.pdf">
+                        <button class="bg-transparent hover:bg-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded">Curriculum Vitae | CV</button>
+                    </a>
+                </div>
+                <div class="flex justify-around mt-8 p-8 text-2xl">
+                    <p>Projets</p>
+                    <p>Formation</p>
+                    <p>Expérience</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+    
+            <div class="col-start-3 flex flex-col w-11/12 gap-4">
+                <a href="https://github.com/TheoCvg" target="_blank" class="flex bg-white shadow-xl rounded-lg p-4 m-4">
+                    <div class="bg-white w-20 h-20 rounded-full">
+                        <img src="./src/images/github-logo.png" alt="Github logo">
+                    </div>
+                    <p class="self-center ml-4 text-2xl">Github</p>
+                </a>
+                <a href="https://www.linkedin.com/in/theo-cavagne/" target="_blank" class="flex bg-white shadow-xl rounded-lg p-4 m-4">
+                    <div class="bg-blue-500 w-20 h-20 rounded-full">
+                        <img src="./src/images/linkedin-logo.png" alt="LinkedIn logo">
+                    </div>
+                    <p class="self-center ml-4 text-2xl">LinkedIn</p>
+                </a>
             </div>
         </div>
-    </nav>
-    <main >
-    </main>
+    </div>
     <footer></footer>
 </body>
 </html>
