@@ -16,7 +16,7 @@ jobs:
             - name: Build output
               run: |
                 npm ci
-                npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css
+                npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css
                 echo "File created locally."
 
             - name: Commit output
